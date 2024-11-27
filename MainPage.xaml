@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.MainPage">
+
+ 
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+                               
+            <Image Source="picture1.jpg"/>
+
+            <Label
+                Text="Calculate your BMI here to know your weight status!"
+                Style="{StaticResource SubHeadline}"/>
+
+            <Button
+                x:Name="BMIPage"
+                Text="Click here"
+                Clicked="Button_Clicked_1"/>
+
+            <Image Source="picture2.jpeg"/>
+
+            <Label
+                Text="Explore filipino foods and their calories per serving!"
+                Style="{StaticResource SubHeadline}"/>
+
+            <Button
+                x:Name="FoodRecommPage"
+                Text="Click here"
+                Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

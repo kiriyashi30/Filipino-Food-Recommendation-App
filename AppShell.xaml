@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp3.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp3"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Carbs n' Food">
+
+    <FlyoutItem
+    Title="Home Page">
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+
+    <FlyoutItem
+    Title="BMI Calculator">
+        <ShellContent
+        Title="BMI Calculator Page"
+        ContentTemplate="{DataTemplate local:BMIPage}"
+        Route="BMIPage" />
+    </FlyoutItem>
+
+    <FlyoutItem
+    Title="Food Recommendation">
+        <ShellContent
+        Title="Food Recommendation"
+        ContentTemplate="{DataTemplate local:FoodRecommPage}"
+        Route="FoodRecommPage" />
+    </FlyoutItem>
+    
+</Shell>
